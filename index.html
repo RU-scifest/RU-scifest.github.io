@@ -15,132 +15,20 @@
     <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
     <script src="js/imagesloaded.min.js"></script>
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASm3CwaK9qtcZEWYa-iQwHaGi3gcosAJc&sensor=false"></script>
-  </head>
-  
+ 		<style>
+		body {
+			color: black;
+			background-color:white;
+		}
+		h1 {
+			color: black;
+		}
+		</style> 
+	</head>
   <body>
-  <ul class="side-nav" id="side-nav">
-	<div id="nav-inner"> 
-	  	<div id="anchors">
-		  	<dd><a href="#">Home</a></dd> 
-		  	<dd><a href="#about">About</a></dd> 
-		  	<dd><a href="#events">Events</a></dd> 
-		  	<dd><a href="#directions">Directions</a></dd> 
-		</div>
-	</div>
-  </ul>
-    <!--
-    <div data-magellan-expedition="fixed" id="nav" class="one-edge-shadow">
-      <div class="nav-inner">
-        <div class="row">
-          <dl class="sub-nav">
-            <dd class="small-12 medium-12 large-3 columns"><a href="#"><img id="logo" src="http://placehold.it/400x90"></a></dd>
-            <dd class="small-12 large-2 columns hide"></dd>
-            <div id="anchors">
-              <dd class="small-2 medium-2 large-1 columns" style="margin-left: 45px;"><a href="#">Home</a></dd>
-              <dd class="small-2 medium-2 large-1 columns"><a href="#about">About</a></dd>
-              <dd class="small-2 medium-2 large-1 columns"><a href="#events">Events</a></dd>
-              <dd class="small-2 medium-2 large-1 columns"><a href="#directions">Directions</a></dd>
-              <dd class="small-12 large-2 columns hide"></dd>
-            </div>
-          </dl>
-          </div>
-        </div>
-      </div>
-      -->
-
-    <div id="wrapper">
-      <div id="billboard">
-        <div id="header-text">
-        <hgroup>
-          <h2>Rutgers Science Festival</h2>
-          <h1>Location</h1>
-          <h2>Date</h2>
-          <img src="http://placehold.it/600x400" style="text-align: center;">
-        </hgroup>
-        </div>
-      </div>
-
-      <div id="about">
-        <div class="overlay">
-          <div class="row">
-            <h1>About</h1>
-            <p></p>
-          </div>
-        </div>
-      </div>
-
-      <div class="web callout" id="events">
-        <div class="row">
-          <h1>Events</h1>
-        </div>
-      </div>
-
-      <div id="directions">
-        <!-- Google Map -->
-      </div>
-
-      <footer class="web">
-        <div class="row">
-        </div>
-      </footer>
-    </div>
-
-    <script type="text/javascript" src="js/foundation.min.js"></script>
-    <script>
-    $(function() {
-        $('#wrapper').css('padding-top', $('.nav-inner').height()-20);
-      });
-
-      $(window).resize(function() {
-        var wi = $(window).width(); 
-        var he = $('.nav-inner').height();
-        $('.videoBG_wrapper').width(wi);
-        $('.videoBG').width(wi);
-        $('#wrapper').css('padding-top', he);
-      });
-
-      google.maps.event.addDomListener(window, 'load', init);
-  
-      function init() {
-          var mapOptions = {
-              // How zoomed in you want the map to start at (always required)
-              zoom: 14,
-              scrollwheel: false,
-              navigationControl: false, 
-              streetViewControl:false,
-              zoomControl: false,
-              disableDefaultUI: true,
-              // The latitude and longitude to center the map (always required)
-              center: new google.maps.LatLng(40.523391,-74.458748), 
-              // How you would like to style the map. 
-              styles:  [{"stylers":[{"hue":"#0033CC"}]},{"featureType":"road","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"geometry","stylers":[{"lightness":50},{"visibility":"simplified"}]}]
-            };
-
-          var mapElement = document.getElementById('directions');
-          var map = new google.maps.Map(mapElement, mapOptions);
-          var myLatlng = new google.maps.LatLng(40.523391,-74.458748);
-          var marker = new google.maps.Marker({
-            position: myLatlng,
-            map: map,
-            title: 'Rutger Science Festival'
-          });
-
-          google.maps.event.addListener(marker, 'click', function() {
-            window.open("https://www.google.com/maps?q=Busch+Campus+Center&t=m&z=17","_blank");
-          });
-      }
-
-      $('#side-nav a').on('click', function(e) { 
-        e.preventDefault(); 
-        var target = $(this).attr('href'); 
-          if (target == '#') { 
-            $('body,html').animate({scrollTop: 0}); 
-          } 
-          else { var targetY = $(target).offset().top; 
-            var headerHeight = $('.nav-inner').height(); 
-            $('body,html').animate({scrollTop: targetY - headerHeight}); 
-          } 
-      });
-    </script>
-  </body>
+		<center>
+			<img src="img/logo.png" alt="logo">
+			<h1>COMING SOON</h1>
+		</center>
+	</body>
 </html>
