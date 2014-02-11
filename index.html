@@ -47,7 +47,7 @@
         </div>
       </div>
     </div>
-      
+
 
     <div id="wrapper">
       <div id="billboard">
@@ -129,6 +129,7 @@
           });
       }
 
+
       $('#nav a').on('click', function(e) {
         e.preventDefault();
         var target = $(this).attr('href');
@@ -139,6 +140,7 @@
             var headerHeight = $('.nav-inner').height();
             $('body,html').animate({scrollTop: targetY - headerHeight});
           }
+
       });
     </script>
   </body>
