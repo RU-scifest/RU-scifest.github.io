@@ -6,14 +6,12 @@ a {
 a:hover, a:focus{
 	outline: 0;
 	overflow: hidden;
-	font-size:150%;
 	color: black;
 }
 
 a .active{
 	outline: 0;
 	overflow: hidden;
-	font-size:150%;
 	color: black;
 }
 
@@ -105,7 +103,7 @@ p {
 	margin: 2% 0 2%;
 }
 
-#side-nav {
+#nav {
 	position: fixed;
 	z-index: 10;
 }
@@ -125,16 +123,10 @@ p {
 	  background-size: cover;
 	  min-height: 100%;
 	}
-	#side-nav a{
-		background: gray;
-		padding-right: 5%;
-		margin-bottom: 10%;
-		position: top;
-		color: black;
-		border: none;
-		font-size: 150%;
+	#contact {
+		position: static;
+		margin: 30% 40% 0 ;
 	}
-
 }
 
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (-webkit-min-device-pixel-ratio: 1)  { 
@@ -171,7 +163,6 @@ p {
 	outline: 0;
 	overflow: hidden;
 	border: none;
-	font-size:150%;
 	color: black;
 }
 

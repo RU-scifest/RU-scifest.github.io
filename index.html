@@ -18,6 +18,7 @@
   </head>
   
   <body>
+  <!--
   <ul class="side-nav" id="side-nav">
 	<div id="nav-inner"> 
 	  	<div id="anchors">
@@ -28,7 +29,7 @@
 		</div>
 	</div>
   </ul>
-    <!--
+  -->
     <div data-magellan-expedition="fixed" id="nav" class="one-edge-shadow">
       <div class="nav-inner">
         <div class="row">
@@ -40,13 +41,13 @@
               <dd class="small-2 medium-2 large-1 columns"><a href="#about">About</a></dd>
               <dd class="small-2 medium-2 large-1 columns"><a href="#events">Events</a></dd>
               <dd class="small-2 medium-2 large-1 columns"><a href="#directions">Directions</a></dd>
-              <dd class="small-12 large-2 columns hide"></dd>
+              <dd class="small-12 large-2 columns "><a href="" id="contact">Contact</a></dd>
             </div>
           </dl>
-          </div>
         </div>
       </div>
-      -->
+    </div>
+      
 
     <div id="wrapper">
       <div id="billboard">
@@ -94,8 +95,6 @@
       $(window).resize(function() {
         var wi = $(window).width(); 
         var he = $('.nav-inner').height();
-        $('.videoBG_wrapper').width(wi);
-        $('.videoBG').width(wi);
         $('#wrapper').css('padding-top', he);
       });
 
@@ -130,16 +129,16 @@
           });
       }
 
-      $('#side-nav a').on('click', function(e) { 
-        e.preventDefault(); 
-        var target = $(this).attr('href'); 
-          if (target == '#') { 
-            $('body,html').animate({scrollTop: 0}); 
-          } 
-          else { var targetY = $(target).offset().top; 
-            var headerHeight = $('.nav-inner').height(); 
-            $('body,html').animate({scrollTop: targetY - headerHeight}); 
-          } 
+      $('#nav a').on('click', function(e) {
+        e.preventDefault();
+        var target = $(this).attr('href');
+          if (target == '#') {
+            $('body,html').animate({scrollTop: 0});
+          }
+          else { var targetY = $(target).offset().top;
+            var headerHeight = $('.nav-inner').height();
+            $('body,html').animate({scrollTop: targetY - headerHeight});
+          }
       });
     </script>
   </body>
