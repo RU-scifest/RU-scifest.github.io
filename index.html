@@ -13,7 +13,6 @@
     <script src="js/modernizr.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
-    <script src="js/imagesloaded.min.js"></script>
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASm3CwaK9qtcZEWYa-iQwHaGi3gcosAJc&sensor=false"></script>
   </head>
   
@@ -34,14 +33,14 @@
       <div class="nav-inner">
         <div class="row">
           <dl class="sub-nav">
-            <dd class="small-12 medium-12 large-3 columns"><a href="#"><img id="logo" src="http://placehold.it/400x90"></a></dd>
+            <dd class="small-12 medium-12 large-3 columns"><a href="#"><img id="logo" src="img/scifestLogo.png"></a></dd>
             <dd class="small-12 large-2 columns hide"></dd>
             <div id="anchors">
               <dd class="small-2 medium-2 large-1 columns" style="margin-left: 45px;"><a href="#">Home</a></dd>
               <dd class="small-2 medium-2 large-1 columns"><a href="#about">About</a></dd>
-              <dd class="small-2 medium-2 large-1 columns"><a href="#events">Events</a></dd>
+              <dd class="small-2 medium-2 large-1 columns"><a href="#people">People</a></dd>
               <dd class="small-2 medium-2 large-1 columns"><a href="#directions">Directions</a></dd>
-              <dd class="small-12 large-2 columns "><a href="" id="contact">Contact</a></dd>
+              <dd class="small-12 large-2 columns "><a target="_top" href="mailto:ru.scifest@gmail.com?Subject=Rutgers%20SciFest" id="contact">Contact</a></dd>
             </div>
           </dl>
         </div>
@@ -53,10 +52,10 @@
       <div id="billboard">
         <div id="header-text">
         <hgroup>
-          <h2>Rutgers Science Festival</h2>
-          <h1>Location</h1>
-          <h2>Date</h2>
-          <img src="http://placehold.it/600x400" style="text-align: center;">
+          <h2>Rutgers SciFest</h2>
+          <h1>Rutgers Life Sciences Building</h1>
+          <h2>Saturday, March 29th @ 12pm</h2>
+        <img src="http://placehold.it/600x400" style="text-align: center; visibility:hidden;">
         </hgroup>
         </div>
       </div>
@@ -65,19 +64,42 @@
         <div class="overlay">
           <div class="row">
             <h1>About</h1>
+            <br>
+            <h2><a href="http://www.facebook.com">Like us on Facebook</a></h2>
+            <h2>The main purpose of the RU-SciFest is to allow students and community members, especially those who have not been exposed 
+
+to the sciences, to experience the excitement that science has to offer. We hope to attract as many K-12 students and children as 
+
+possible to enrich their minds with a spark of passion for the sciences. The event will involve numerous student organizations 
+
+across all fields of science, who will promote their respective field to the public through interactive and fun activities. We 
+
+welcome all students of Rutgers as well as the general public from surrounding communities to join us for a day of just science.</h2>
             <p></p>
           </div>
         </div>
       </div>
 
-      <div class="web callout" id="events">
+      <div class="web callout" id="people">
         <div class="row">
-          <h1>Events</h1>
+          <h1>People</h1>
+          <form id="circles">
+
+          	<input id="circle1" title="test" onclick="openModal(this);" class="circle" type="submit" value="" style="background: url('img/707414main_Dbl_prom_full.jpg');">
+
+          	<input id="circle2" title="test" onclick="openModal(this);" class="circle" type="submit" value="" style="background: url('img/707414main_Dbl_prom_full.jpg');">
+
+          </form>
         </div>
       </div>
 
       <div id="directions">
         <!-- Google Map -->
+      </div>
+
+      <div id="myModal" class="reveal-modal" data-reveal>
+      	<h1 style="color:black">Test Modal</h1>
+      	<a class="close-reveal-modal">&#215;</a>
       </div>
 
       <footer class="web">
@@ -88,6 +110,8 @@
 
     <script type="text/javascript" src="js/foundation.min.js"></script>
     <script>
+    $(document).foundation();
+
     $(function() {
         $('#wrapper').css('padding-top', $('.nav-inner').height()-20);
       });
@@ -103,35 +127,54 @@
       function init() {
           var mapOptions = {
               // How zoomed in you want the map to start at (always required)
-              zoom: 14,
+              zoom: 17,
               scrollwheel: false,
               navigationControl: false, 
               streetViewControl:false,
               zoomControl: false,
               disableDefaultUI: true,
               // The latitude and longitude to center the map (always required)
-              center: new google.maps.LatLng(40.523391,-74.458748), 
+              center: new google.maps.LatLng(40.5244815,-74.4633866), 
               // How you would like to style the map. 
               styles:  [{"stylers":[{"hue":"#0033CC"}]},{"featureType":"road","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"geometry","stylers":[{"lightness":50},{"visibility":"simplified"}]}]
             };
 
           var mapElement = document.getElementById('directions');
           var map = new google.maps.Map(mapElement, mapOptions);
-          var myLatlng = new google.maps.LatLng(40.523391,-74.458748);
+          var myLatlng = new google.maps.LatLng(40.5244815,-74.4633866);
           var marker = new google.maps.Marker({
             position: myLatlng,
             map: map,
-            title: 'Rutger Science Festival'
+            title: 'Rutgers Science Festival'
           });
 
           google.maps.event.addListener(marker, 'click', function() {
-            window.open("https://www.google.com/maps?q=Busch+Campus+Center&t=m&z=17","_blank");
+            window.open("https://www.google.com/maps/place/Life+Sciences+Bldg/@40.5244815,-74.4633866,17z/data=!3m1!4b1!4m2!3m1!1s0x89c3c70d4e4e401b:0xa7320fc47923f31a","_blank");
           });
       }
 
+      $('#people').click(function(e) {
+     	return false; // prevent default click action from happening!
+     	e.preventDefault(); // same thing as above
+	  });
+
+      function openModal (el) {
+      	console.log(el.id);
+      	if(el.id == 'circle1'){
+        	$('#myModal').foundation('reveal', 'open');
+      	}
+      }
+
+
+      /*$('#circles').on('submit', function (e) {
+        e.preventDefault();
+        if( getElementById == circle1){
+        
+      });
+	  */
 
       $('#nav a').on('click', function(e) {
-        e.preventDefault();
+        //e.preventDefault();
         var target = $(this).attr('href');
           if (target == '#') {
             $('body,html').animate({scrollTop: 0});
@@ -145,3 +188,19 @@
     </script>
   </body>
 </html>
+
+<!--
+To add:
+	Keynote talk synopsis
+	Add Physics Lecture Hall, Engineering Quad, lots 54, 54a to map
+	Add flyer to About section
+	Itinerary
+	TOP BUBBLES:
+	Chem: Bob Porcja
+	Phys: David Maiullo
+	Keynote: Dr. Robert Zubrin
+	SPONSORS:
+	RUSA
+	Physics
+	Busch Campus Deans
+-->

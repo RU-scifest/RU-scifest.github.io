@@ -6,21 +6,26 @@ a {
 a:hover, a:focus{
 	outline: 0;
 	overflow: hidden;
-	color: black;
+	color: gray;
 }
 
 a .active{
 	outline: 0;
 	overflow: hidden;
-	color: black;
+	color: gray;
 }
 
 b {
 	color: #d41d29;
 }
 
-body {
-	background-color: #29A329;
+.circle {
+	border-radius: 50%;
+	border-style: none;
+	width: 100px;
+	height: 100px;
+	cursor: pointer;
+	/* width and height can be anything, as long as they're equal */
 }
 
 dd a{
@@ -53,7 +58,6 @@ h1 {
 
 h1 , h2 {
 	font-family: 'Helvetica';
-	font-style: italic;
 	color: white;
 }
 
@@ -69,7 +73,7 @@ p {
 }
 
 #about {
-	background-image: url();
+	background-image: url('../img/707414main_Dbl_prom_full.jpg');
 	background-repeat: no-repeat;
 	background-position: center top;
 	-webkit-background-size: cover;
@@ -81,13 +85,18 @@ p {
 #billboard {
   height: 100%;
   width: 100%;
-  background-image: url(http://hd.highresolution-wallpapers.net/walls/electronic_circuit_board-wide.jpg);
+  background-image: url('../img/715715main_holiday_full_full.jpg');
 	background-repeat: no-repeat;
 	background-position: center top;
 	-webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
+
+#people {
+	background-image: url('../img/711171main_earthatnight_northamerica_full_full.jpg')
+	
 }
 
 #header-text {
@@ -114,7 +123,7 @@ p {
 	}
 
 	#billboard {
-		background-image: url(http://hd.highresolution-wallpapers.net/walls/electronic_circuit_board-wide.jpg);
+		background-image: url('../img/715715main_holiday_full_full.jpg');
 		background-repeat: no-repeat;
 		background-position: center top fixed;
 		-webkit-background-size: cover;
@@ -131,7 +140,7 @@ p {
 
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (-webkit-min-device-pixel-ratio: 1)  { 
 	#billboard {
-		background-image: url(http://hd.highresolution-wallpapers.net/walls/electronic_circuit_board-wide.jpg);
+		background-image: url('../img/715715main_holiday_full_full.jpg');
 		background-repeat: no-repeat;
 		background-position: center top fixed;
 		-webkit-background-size: cover;
@@ -144,7 +153,7 @@ p {
 
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px)and (-webkit-min-device-pixel-ratio: 2) { 
 	#billboard {
-		background-image: url(http://hd.highresolution-wallpapers.net/walls/electronic_circuit_board-wide.jpg);
+		background-image: url('../img/715715main_holiday_full_full.jpg');
 		background-repeat: no-repeat;
 		background-position: center top fixed;
 		-webkit-background-size: cover;
@@ -189,7 +198,7 @@ p {
 }
 
 .web {
-	background-image: url();
+	background-image: url('../img/700406main_saturn_full_full.jpg');
 	background-repeat: no-repeat;
 	background-position: center top;
 	-webkit-background-size: cover;
@@ -220,3 +229,4 @@ p {
 ::-moz-placeholder {  font-family:'Helvetica'; } /* firefox 19+ */
 :-ms-input-placeholder { font-family:'Helvetica'; } /* ie */
 input:-moz-placeholder { font-family:'Helvetica'; }
+
