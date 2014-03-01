@@ -95,6 +95,10 @@ p {
 	color: gray;
 }
 
+#about a{
+	color: white;
+}
+
 #billboard {
   height: 100%;
   width: 100%;
