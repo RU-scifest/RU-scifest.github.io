@@ -246,6 +246,9 @@ p {
 	color: black;
 }
 
+#wrapper h1{
+	color: white;
+}
 ::-webkit-input-placeholder { font-family:'Helvetica'; }
 ::-moz-placeholder {  font-family:'Helvetica'; } /* firefox 19+ */
 :-ms-input-placeholder { font-family:'Helvetica'; } /* ie */
