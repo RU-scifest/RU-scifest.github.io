@@ -1,0 +1,150 @@
+@charset "utf-8";
+/* CSS Document */
+
+@font-face {
+    font-family: 'BebasRegular';
+    src: url('fonts/BEBAS___-webfont.eot');
+    src: url('fonts/BEBAS___-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/BEBAS___-webfont.woff') format('woff'),
+         url('fontsBEBAS___-webfont.ttf') format('truetype'),
+         url('fonts/BEBAS___-webfont.svg#BebasRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+html,body{
+ font-family: 'BebasRegular';
+	width:100%;
+	height:100%;
+}
+
+.navigation{
+	font-size: 20px;
+	position:fixed;
+	z-index:1;
+	top:20px;
+}
+.navigation li{
+	font-family: 'BebasRegular';
+	color:#eeeeee;
+	display:block;
+	padding: 0 10px;
+	line-height:30px;
+	margin-bottom:5px;
+	font-weight:bold;
+	-webkit-transition: all .2s ease-in-out;
+	border-bottom:1px solid white;
+	text-align:left;
+	width:40px;
+}
+.navigation li:hover,.active{
+	font-size:30px;
+	cursor:pointer;
+	width:40px!important;
+}
+.logo{
+position:absolute;
+top:20%;
+left:35%;
+width: 896px; 
+height: 489px;
+margin-top:-41px;
+margin-left:-223px;
+z-index:1;
+}
+.ru{
+position:fixed;
+width: 223px;
+height: 76px;
+right:40px;
+top:40px;
+z-index: 1;
+}
+.slide{
+	background-attachment: fixed;
+	width:100%;
+	height:100%;
+	position: relative;
+	box-shadow:inset 0px 10px 10px rgba(0,0,0,0.3);
+}
+.wrapper{
+	width:960px;
+	height:200px;
+	margin:0 auto;
+	position:relative;
+}
+.slideno{
+	font-family: 'BebasRegular';
+	position:absolute;
+	bottom:0px;
+	left:0px;
+	font-size:100px;
+	font-weight:bold;
+	color:rgba(255,255,255,0.3);
+}
+.button{
+	display:block;
+	width:50px;
+	height:50px;
+	position:absolute;
+	bottom:0px;
+	left:50%;
+	background-color:#333333;
+	background-image:url(../img/arrow.png);
+}
+.button:hover{
+	background-color:#494949;
+	cursor:pointer;
+}
+
+/******************************
+ SLIDE 1 
+*******************************/
+#slide1{
+	background-image:url(../img/background.png);
+}
+
+/******************************
+ SLIDE 2 
+*******************************/
+#slide2{
+	background-color:#005c99;
+}	
+
+/******************************
+ SLIDE 3 
+*******************************/
+#slide3{
+	background-color:#b6c10b;
+}
+/******************************
+ SLIDE 4 
+*******************************/
+
+#slide4{
+	background-color:#5c9900;	
+}
+/******************************
+ GOOGLE MAPS
+*******************************/
+
+.location-areas p {
+	text-align: center;
+	font-size: 20px;
+	margin-top: 0;
+}
+.location-areas ul {
+	list-style: none;
+	margin-left: 50%;
+}
+.map-area-wrapper {
+	margin-top: 5%;
+	margin-left: 21%;
+	position: center;
+	border: 1px;
+	overflow: visible;
+	background-color: transparent;
+	-webkit-border-radius: 0px 4px 4px 4px;
+	-moz-border-radius: 0px 4px 4px 4px;
+	border-radius: 0px 4px 4px 4px;
+}

@@ -1,0 +1,515 @@
+<!doctype html>
+
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Rutgers Science Festival</title>
+    <link rel="icon" type="image/ico" href="img/favicon.ico">
+    <link rel="stylesheet" href="css/foundation.min.css" />
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,600,700,400italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/app.css" />
+	<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+    <script src="js/modernizr.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASm3CwaK9qtcZEWYa-iQwHaGi3gcosAJc&sensor=false"></script>
+ 		<style>
+		body {
+			color: black;
+			background-color:white;
+		}
+		h1 {
+			color: black;
+		}
+		</style> 
+	</head>
+  <body>
+  <!--
+  <ul class="side-nav" id="side-nav">
+	<div id="nav-inner"> 
+	  	<div id="anchors">
+		  	<dd><a href="#">Home</a></dd> 
+		  	<dd><a href="#about">About</a></dd> 
+		  	<dd><a href="#events">Events</a></dd> 
+		  	<dd><a href="#directions">Directions</a></dd> 
+		</div>
+	</div>
+  </ul>
+  -->
+    <div data-magellan-expedition="fixed" id="nav" class="one-edge-shadow">
+      <div class="nav-inner">
+        <div class="row">
+          <dl class="sub-nav">
+            <dd class="small-12 medium-12 large-3 columns"><a href="#"><img id="logo" src="img/scifestLogo.png"></a></dd>
+            <dd class="small-12 large-2 columns hide"></dd>
+            <div id="anchors">
+              <dd class="small-2 medium-2 large-1 columns" style="margin-left: 45px;"><a href="#">Home</a></dd>
+              <dd class="small-2 medium-2 large-1 columns"><a href="#about">About</a></dd>
+              <dd class="small-2 medium-2 large-1 columns"><a href="#people">People</a></dd>
+              <dd class="small-2 medium-2 large-1 columns"><a href="#directions">Directions</a></dd>
+              <dd class="small-12 large-2 columns "><a target="_top" href="mailto:ru.scifest@gmail.com?Subject=Rutgers%20SciFest" id="contact">Contact</a></dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="wrapper">
+      <div id="billboard">
+        <div id="header-text">
+        <hgroup>
+          <h2>Free Admission. Free Food. Free Prizes.</h2>
+          <h2>Saturday, March 29th Rain or Shine!</h2>
+        <div class="large-6 columns">
+          <h1>Rutgers Life Sciences Building</h1>
+          <h3 style="color:white; font-weight:500;">145 Bevier Road, Piscataway, NJ 08854</h3>
+          <h2>Saturday, March 29th</h2>
+          <h2 style="color:white;">12noon - 4pm</h2>
+        </div>
+        <div style="large-6 columns">
+          <h1>Rutgers Physics Lecture Hall</h1>
+          <h3 style="color:white;; font-weight:500;">120 Frelinghuysen Road, Piscataway, NJ 08854</h3>
+          <h2 style="color:white;">Saturday, March 29th</h2>
+          <h2 style="color:white;">4:30pm - 7:30pm</h2>
+        </div>
+        <br>
+          <h2 style="color:white; text-align:center;">Parking available in lots 54 and 54A</h2>
+
+        <img src="http://placehold.it/600x400" style="text-align: center; visibility:hidden;">
+
+        
+        <h4 style="color:white; font-weight:600;">Click the link below for a detailed list of presentations and times/locations.</h4>
+        <h2 style="color:white;">
+          <a style="color:white;" target="_blank" href="img/itinerary.pdf">View the Itinerary</a>
+        </h2>
+        <h4 style="color:white; font-weight:600;">Click the links below for more information.</h4>
+        <h2 style="color:white;"><a style="color:white;" target="_blank" href="https://www.facebook.com/RUScifest">Like us on Facebook</a> &nbsp; | &nbsp;  View the Fliers: <a style="color:white;" target="_blank" href="img/flier.pdf">1</a> <a style="color:white;" target="_blank" href="img/flier2.pdf">2</a> <a style="color:white;" target="_blank" href="img/flier3.pdf">3</a> &nbsp; <br> <a style="color:white;" target="_blank" href="https://www.facebook.com/events/1473633729527182/">RSVP</a></h2>
+        </hgroup>
+        </div>
+      </div>
+
+      <div id="about">
+        <div class="overlay">
+          <div class="row">
+            <h1>About</h1>
+            <br>
+            
+            <h2>The main purpose of the RU-SciFest is to allow students and community members, especially those who have not been exposed 
+
+to the sciences, to experience the excitement that science has to offer. We hope to attract as many K-12 students and children as 
+
+possible to enrich their minds with a spark of passion for the sciences. The event will involve numerous student organizations 
+
+across all fields of science, who will promote their respective field to the public through interactive and fun activities. We 
+
+welcome all students of Rutgers as well as the general public from surrounding communities to join us for a day of just science.</h2>
+            <p></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="large-12 columns" id="people">
+        <div class="large-12 columns">
+          <h1 style="text-align:center;">People & Clubs</h1>
+          <h5 style="text-align:center; color:white;; font-weight:500;">Click the bubbles for more information</h5>
+          <form id="circles">
+
+          	<input title="Dr. Robert Zubrin" id="circle1" onclick="openModal(this);" class="circle" type="submit" value="" style="background: url('img/Robert_Zubrin_hi-res_photo-2-12-14.jpg');">
+
+          	<input title="Rob Porcja" id="circle2" onclick="openModal(this);" class="circle" type="submit" value="" style="background: url('img/robporcja.png');">
+
+            <input title="Dave Maiullo" id="circle3" onclick="openModal(this);" class="circle" type="submit" value="" style="background: url('img/davem.png');">
+
+            <br><br>
+
+            <input title="Rutgers Astronomical Society" id="circle4" onclick="openModal(this);" class="circle2" type="submit" value="" style="background: url('img/ras.png');">
+
+            <input title="Association of Undergraduate Geneticists" id="circle5" onclick="openModal(this);" class="circle2" type="submit" value="" style="background: url('img/augsmall.png');">
+
+            <input title="Rutgers Photography Club" id="circle6" onclick="openModal(this);" class="circle2" type="submit" value="" style="background: url('img/photoclublogo.jpg');">
+
+            <input title="Rutgers University Science, Mathematics, & Engineering Outreach" id="circle7" onclick="openModal(this);" class="circle2" type="submit" value="" style="background: url('img/rusmeoico.png');">
+
+            <input title="Rutgers International Society for Optics and Photonics" id="circle8" onclick="openModal(this);" class="circle2" type="submit" value="" style="background: url('img/spie.png');">
+
+            <input title="Rutgers University Meteorology Club" id="circle9" onclick="openModal(this);" class="circle2" type="submit" value="" style="background: url('img/meteor.png');">
+
+            <input title="Rutgers Cognitive Science Club" id="circle10" onclick="openModal(this);" class="circle2" type="submit" value="" style="background: url('img/cogsci.png');">
+
+            <input title="Women in Computer Science" id="circle11" onclick="openModal(this);" class="circle2" type="submit" value="" style="background: url('img/wics.png');">
+
+            <input title="Rutgers Chemical Society" id="circle12" onclick="openModal(this);" class="circle2" type="submit" value="" style="background: url('img/aiche.png');">
+
+            <input title="Institute of Electrical and Electronics Engineers" id="circle13" onclick="openModal(this);" class="circle2" type="submit" value="" style="background: url('img/IEEE_logo.jpg');">
+
+            <input title="Society of Physics Students" id="circle14" onclick="openModal(this);" class="circle2" type="submit" value="" style="background: url('img/sps.png');">
+
+            <input title="Undergraduate Student Alliance of Computer Scientists" id="circle18" onclick="openModal(this);" class="circle2" type="submit" value="" style="background: url('img/tuxknight.png');">
+
+            <input title="Alliance Against Autoimmune Disease" id="circle20" onclick="openModal(this);" class="circle2" type="submit" value="" style="background: url('img/AAAD_Logo.png');">
+
+            <br><br>
+
+            <h3 style="color:white;">Sponsors</h3>
+
+            <input title="Rutgers University Student Assembly" id="circle19" onclick="openModal(this);" class="circle" type="submit" value="" style="background: url('img/rusa_logo.png');">
+
+            <input title="Rutgers University Programming Association" id="circle15" onclick="openModal(this);" class="circle" type="submit" value="" style="background: url('img/rupa.png');">
+
+            <input title="Busch Campus Deans" id="circle16" onclick="openModal(this);" class="circle" type="submit" value="" style="background: url('img/papathomas.png');">
+
+            <input title="Department of Physics & Astronomy" id="circle17" onclick="openModal(this);" class="circle" type="submit" value="" style="background: url('img/serinsnowsmall.png');">
+
+          </form>
+        </div>
+      </div>
+
+      <div id="directions">
+        <!-- Google Map -->
+      </div>
+
+      <div id="myModal1" class="reveal-modal" data-reveal>
+      	<h2>Dr. Robert Zubrin</h2>
+        <p class="lead">Keynote Speaker</p>
+        <h5>An American aerospace engineer and author, best known for his advocacy of the manned exploration of Mars. He was the driving force behind Mars Direct—a proposal intended to produce significant reductions in the cost and complexity of such a mission. The key idea was to use the Martian atmosphere to produce oxygen, water, and rocket propellant for the surface stay and return journey. A modified version of the plan was subsequently adopted by NASA as their "design reference mission". He questions the delay and cost-to-benefit ratio of first establishing a base or outpost on an asteroid or another Apollo Program-like return to the Moon, as neither would be able to provide all of its own oxygen, water, or energy; these resources are producible on Mars, and he expects people would be there thereafter.</h5>
+        <h4><a target="_blank" href="img/Zubrin Bio_Synopisis for Lecture.pdf">View a synopsis of his lecture.</a></h4>
+      	<a class="close-reveal-modal">&#215;</a>
+      </div>
+
+      <div id="myModal2" class="reveal-modal" data-reveal>
+        <h2>Robert Porcja</h2>
+        <p class="lead">Chemistry</p>
+        <h5></h5>
+        <a class="close-reveal-modal">&#215;</a>
+      </div>
+
+      <div id="myModal3" class="reveal-modal" data-reveal>
+        <h2>David Maiullo</h2>
+        <p class="lead">Physics</p>
+        <h5>Maiullo creates entertaining demonstrations that physics professors use to convey hard-to-grasp scientific principles. First-year physics students, for example, may witness frozen flowers shatter like glass, a person lying on a bed of nails or a professor rocketing himself around the lecture hall on roller skates with a fire extinguisher. Maiullo views his role as equal parts teacher, technician and performer. He first needs to understand what concepts the professor is trying to convey, then creates demonstrations that are catchy and easy to see from the top of the hall’s amphitheatre-style seating gallery. Before the lecture he rehearses the professor in using the demo and will occasionally assist during class. Maiullo oversees a part-time staff of 10 students who help him build the demos and manage a treasure-trove of instruments and materials housed under the seating area in back of the building. </h5>
+        <a class="close-reveal-modal">&#215;</a>
+      </div>
+
+      <div id="myModal4" class="reveal-modal" data-reveal>
+        <h2>Rutgers Astronomical Society</h2>
+        <p class="lead">Mission Statement</p>
+        <h5>The chief enterprise of the Rutgers Astronomical Society involves uniting those who are fascinated with the vastness of space and who are interested in discussing and observing the Cosmos. The organization endeavors to make astronomy accessible for anyone with even the slightest interest by providing viewing opportunities, informative seminars, academic collaboration, star parties, and more. </h5>
+        <p class="lead">Activity</p>
+        <h5>Ever been told not to look directly at the Sun? Well, the Astronomical Society says otherwise. Referred to as solar observing, we will allow audience members to look directly at the Sun through two of our 8’’ optical telescopes equipped with solar filters. During the nighttime observing session, come see the vastness of our galaxy by learning about the different constellations. We will be displaying various solar and celestial objects through the use of our telescopes as well as “pointing" them out with our high-powered green laser. Take home pictures of what you observed by using our smartphone adapters. We look forward to sharing our passion for astronomy and stargazing with you!</h5>
+        <a class="close-reveal-modal">&#215;</a>
+      </div>
+
+      <div id="myModal5" class="reveal-modal" data-reveal>
+        <h2>Association of Undergraduate Geneticists</h2>
+        <p class="lead"></p>
+        <h5>The primary goal of the AUG is to serve as an educational yet social atmosphere for its members. The association works closely with the Rutgers Genetics Department in order to update the students on research opportunities, lectures and other various departmental activities. AUG itself also presents guest speakers who share their knowledge and views on Genetics in many aspects of every day life. In addition, the association offers experienced student mentors that can help all students with the 'inside' information about the Genetics major.</h5>
+        <a class="close-reveal-modal">&#215;</a>
+      </div>
+
+      <div id="myModal6" class="reveal-modal" data-reveal>
+        <h2>Rutgers Photography Club</h2>
+        <p class="lead"></p>
+        <h5>The purpose of the Photography Club is to create a community for fellow photographers to share their knowledge, techniques, ideas, and friendship with one another. We discuss photography, develop our skills, find new inspiration, and educate one another to help engage new opportunities for our own successful future as photographers. The Photography Club provides the students of Rutgers University with a greater knowledge of photography and its uses, as well as a space in which they can practice that shared interest.</h5>
+        <a class="close-reveal-modal">&#215;</a>
+      </div>
+
+      <div id="myModal7" class="reveal-modal" data-reveal>
+        <h2>Rutgers University Science, Mathematics, & Engineering Outreach</h2>
+        <p class="lead"></p>
+        <h5>RUSMEO is dedicated to the promotion and exploration of scientific, mathematical, and engineering knowledge and literacy and both inside and outside Rutgers University. We hold both internal events to encourage undergraduate interest, research and networking in STEM fields and external events that provide students with a link to community involvement and leadership through outreach programs in local schools. </h5>
+        <a class="close-reveal-modal">&#215;</a>
+      </div>
+
+      <div id="myModal8" class="reveal-modal" data-reveal>
+        <h2>Rutgers International Society for Optics and Photonics</h2>
+        <p class="lead"></p>
+        <h5>The Rutgers SPIE Student Chapter, a.k.a. Rutgers Photonics Club, is an affiliate of the International Society of Optics and Photonics (SPIE), a highly renowned society with more than 17,000 members worldwide. The society is related to the field of photonics, which is the science of light and is a field with contributions and applications in many disciplines, including biomedical engineering, material science, electrical engineering, and physics. The Rutgers SPIE Student Chapter provides students the opportunity to join a professional society, to partake in various Chapter events, and to collaborate and meet other Rutgers students. More information can be found at <a target="_blank" href="http://spierutgers.wordpress.com">spierutgers.wordpress.com</a>.</h5>
+        <a class="close-reveal-modal">&#215;</a>
+      </div>
+
+      <div id="myModal9" class="reveal-modal" data-reveal>
+        <h2>Rutgers University Meteorology Club</h2>
+        <p class="lead"></p>
+        <h5>The Rutgers University Meteorology Club incorporates students into a
+
+group that serves as a chapter of the American Meteorological Society and National Weather 
+
+Association. In addition to providing members with a place to apply, share, and develop 
+
+knowledge with other members, the Rutgers Meteorology Club also strives to reach out to and 
+
+educate the greater community about weather and climate.</h5>
+        <a class="close-reveal-modal">&#215;</a>
+      </div>
+
+      <div id="myModal10" class="reveal-modal" data-reveal>
+        <h2>Rutgers Cognitive Science Club</h2>
+        <p class="lead"></p>
+        <h5> The Cognitive Science Club brings together students and professors from various departments, including Neuroscience, Computer Science, Psychology, Philosophy, Linguistics, and more, to support an interdisciplinary approach to investigating the mysteries of the mind.
+        To demonstrate some of the topics cognitive scientists are interested in, we will present a series of illusions that test aspects of vision and body representation in the brain. These include the Rubber Hand Illusion and a mirrored body transfer illusion, both interactive activities that reveal information about the mechanisms of our perception and self-consciousness. Through these demos we hope to spark interest in the field and provide insights into the incredible progress being made to understand and expand our cognitive abilities.</h5>
+        <a class="close-reveal-modal">&#215;</a>
+      </div>
+
+      <div id="myModal11" class="reveal-modal" data-reveal>
+        <h2>Women in Computer Science</h2>
+        <p class="lead"></p>
+        <h5>Women in Computer Science (WCS) was created as a result of the gender gap in the field, to encourage the participation of women in computer science, as well as to help the students that are enrolled in computer courses and provide support at Rutgers University.</h5>
+        <a class="close-reveal-modal">&#215;</a>
+      </div>
+
+      <div id="myModal12" class="reveal-modal" data-reveal>
+        <h2>American Institute of Chemical Engineers</h2>
+        <p class="lead"></p>
+        <h5>AIChE is the world's leading organization for chemical engineering professionals, with over 45,000 members from over 100 countries. AIChE has the breadth of resources and expertise you need whether you are in core process industries or emerging areas, such as nanobiotechnology.</h5>
+        <a class="close-reveal-modal">&#215;</a>
+      </div>
+
+      <div id="myModal13" class="reveal-modal" data-reveal>
+        <h2>Institute of Electrical and Electronics Engineers</h2>
+        <p class="lead"></p>
+        <h5> The Rutgers IEEE student branch believes in the advancement of technology for humanity through education. It strives to provide hands-on learning opportunities where Rutgers students are invited to attend and become acquainted with the latest industry technologies and developments. The student branch is also home to a host of technical side-projects including a large fully-autonomous competition robot, and smaller robots that compete in equally-challenging competitions.</h5>
+        <a class="close-reveal-modal">&#215;</a>
+      </div>
+
+      <div id="myModal14" class="reveal-modal" data-reveal>
+        <h2>Society of Physics Students</h2>
+        <p class="lead"></p>
+        <h5>
+The Rutgers Society of Physics Students hosts academic and social events to serve the community of Rutgers physics students while promoting the general awareness and understanding of physics.</h5>
+        <a class="close-reveal-modal">&#215;</a>
+      </div>
+
+      <div id="myModal15" class="reveal-modal" data-reveal>
+        <h2>Rutgers University Programming Association</h2>
+        <p class="lead"></p>
+        <h5>RUPA is the university-wide student programming council that serves the Rutgers community by providing a variety of events appealing to the diverse student body on all five campuses. Examples include concerts with artists like Pitbull, comedy shows with artists like Aziz Ansari, the Annual Homecoming Charity Bed Races, entertaining lectures and performances, art projects, and so much more.</h5>
+        <a class="close-reveal-modal">&#215;</a>
+      </div>
+
+      <div id="myModal16" class="reveal-modal" data-reveal>
+        <h2>Busch Campus Deans</h2>
+        <p class="lead">Dean Papathomas</p>
+        <h5>Dean Papathomas joined Rutgers in 1989 as an Associate Professor (promoted to full Professor in 1997) in the Department of Biomedical Engineering and is the Associate Director of the Laboratory of Vision Research. His research interests are in human and machine vision, neural mechanisms in vision, image processing, imaging systems, and scientific visualization techniques. He is investigating the mechanisms that underlie the perception of visual motion, stereopsis, texture, and the deployment of attention in vision. In particular, he studies the role of visual attributes (color, luminance, shape, spatial frequency, etc.) in perception, with the ultimate goal of developing quantitative models of biological mechanisms in these modalities.</h5>
+        <a class="close-reveal-modal">&#215;</a>
+      </div>
+
+      <div id="myModal17" class="reveal-modal" data-reveal>
+        <h2>Department of Physics & Astronomy</h2>
+        <p class="lead"></p>
+        <h5></h5>
+        <a class="close-reveal-modal">&#215;</a>
+      </div>
+
+      <div id="myModal18" class="reveal-modal" data-reveal>
+        <h2>Undergraduate Student Alliance of Computer Scientists</h2>
+        <p class="lead"></p>
+        <h5>USACS, also known as the Undergraduate Student Alliance of Computer Scientists is a Computer Science interest group. Primarily USACS exists as a club that strings together a series of events for the Rutgers CS community. Our "members" are loosely defined as event regulars attendees and participants.
+
+In addition to our two big events that we plan on a semesterly basis, USACS runs Code Red every Friday from 3pm to 5pm in Hill 252, a program set up for 111 and 112 students to come in and get free tutoring from USACS members. After Code Red at 6pm we hold a weekly Hacker Hour session. Each Hacker Hour an upper classmen teaches an awesome subject that CS students would normally never get to learn in the standard CS curriculum.
+
+USACS also manages a mentoring program that connects aspiring underclassmen CS students with experience upperclassmen who can teach them practical job-oriented CS skills. If you're interested in being mentored, come to Hacker hour and speak with one of the organizers about getting paired up!</h5>
+        <a class="close-reveal-modal">&#215;</a>
+      </div>
+
+      <div id="myModal19" class="reveal-modal" data-reveal>
+        <h2>Rutgers University Student Assembly</h2>
+        <p class="lead"></p>
+        <h5></h5>
+        <a class="close-reveal-modal">&#215;</a>
+      </div>
+
+      <div id="myModal20" class="reveal-modal" data-reveal>
+        <h2>Alliance Against Autoimmune Disease</h2>
+        <p class="lead"></p>
+        <h5>Alliance Against Autoimmune Disease seeks to establish awareness, strong research support, and compassion for people diagnosed with any of various autoimmune diseases. Many people misunderstand the fundamental diagnosis and implications of autoimmune diseases when it comes to nonspecific causes, symptoms, and relation to AIDs/HIV. Through awareness efforts such as fundraising events, information sessions, and volunteer services, AAAD aims to create a more accurate understanding of autoimmunity. Along with educating through awareness, our organization will create a strong community effort to increase funding for preventative autoimmune research and informative patient counseling.</h5>
+        <a class="close-reveal-modal">&#215;</a>
+      </div>
+
+      <footer class="web">
+        <div class="row">
+          <h2 style="font-style:italic;">Created by <a target="_blank" href="http://usacs.rutgers.edu"> USACS </a>for the Rutgers Astronomical Society</h2>
+          <p style="color:white; font-style:italic;">Designed by <a target="_blank" href="http://www.github.com/adispen"> adispen</a></p>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="js/foundation.min.js"></script>
+    <script>
+    $(document).foundation();
+
+    $(function() {
+        $('#wrapper').css('padding-top', $('.nav-inner').height()-20);
+      });
+
+      $(window).resize(function() {
+        var wi = $(window).width(); 
+        var he = $('.nav-inner').height();
+        $('#wrapper').css('padding-top', he);
+      });
+
+      google.maps.event.addDomListener(window, 'load', init);
+  
+      function init() {
+          var mapOptions = {
+              // How zoomed in you want the map to start at (always required)
+              zoom: 17,
+              scrollwheel: false,
+              navigationControl: false, 
+              streetViewControl:false,
+              zoomControl: false,
+              disableDefaultUI: true,
+              // The latitude and longitude to center the map (always required)
+              center: new google.maps.LatLng(40.5244815,-74.4633866), 
+              // How you would like to style the map. 
+              styles:  [{"stylers":[{"hue":"#0033CC"}]},{"featureType":"road","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"geometry","stylers":[{"lightness":50},{"visibility":"simplified"}]}]
+            };
+
+          var mapElement = document.getElementById('directions');
+          var map = new google.maps.Map(mapElement, mapOptions);
+          var myLatlng = new google.maps.LatLng(40.5244815,-74.4633866);
+          var marker = new google.maps.Marker({
+            position: myLatlng,
+            map: map,
+            title: 'Rutgers Science Festival'
+          });
+          var myLatlng1 = new google.maps.LatLng(40.5223816,-74.4634726);
+          var marker1 = new google.maps.Marker({
+            position: myLatlng1,
+            map: map,
+            title: 'Rutgers Physics Lecture Hall'
+          });
+          var myLatlng2 = new google.maps.LatLng(40.5232455,-74.4628189);
+          var marker2 = new google.maps.Marker({
+            position: myLatlng2,
+            map: map,
+            title: 'Engineering Quad'
+          });
+          var myLatlng3 = new google.maps.LatLng(40.5252085,-74.4619524);
+          var marker3 = new google.maps.Marker({
+            position: myLatlng3,
+            map: map,
+            title: 'Lot 54'
+          });
+          var myLatlng4 = new google.maps.LatLng(40.5258895,-74.4616574);
+          var marker4 = new google.maps.Marker({
+            position: myLatlng4,
+            map: map,
+            title: 'Lot 54A'
+          });
+
+          google.maps.event.addListener(marker, 'click', function() {
+            window.open("https://www.google.com/maps/place/Life+Sciences+Bldg/@40.5244815,-74.4633866,17z/data=!3m1!4b1!4m2!3m1!1s0x89c3c70d4e4e401b:0xa7320fc47923f31a","_blank");
+          });
+          google.maps.event.addListener(marker1, 'click', function() {
+            window.open("https://www.google.com/maps/place/Physics+Lecture+Hall/@40.5223816,-74.4634726,17z/data=!3m1!4b1!4m2!3m1!1s0x89c3c70d9d17f4a9:0x460215236a725aa4");
+          });
+          google.maps.event.addListener(marker2, 'click', function() {
+            window.open("https://www.google.com/maps/place/Busch+Campus/@40.523239,-74.4627705,17z");
+          });
+          google.maps.event.addListener(marker3, 'click', function() {
+            window.open("http://maps.rutgers.edu/location/lot-54");
+          });
+          google.maps.event.addListener(marker4, 'click', function() {
+            window.open("http://maps.rutgers.edu/location/lot-54a");
+          });
+      }
+
+      $('#people').click(function(e) {
+     	return false; // prevent default click action from happening!
+     	e.preventDefault(); // same thing as above
+	  });
+
+      function openModal (el) {
+      	console.log(el.id);
+      	if(el.id == 'circle1'){
+        	$('#myModal1').foundation('reveal', 'open');
+        }
+        if(el.id == 'circle2'){
+          $('#myModal2').foundation('reveal', 'open');
+        }
+        if(el.id == 'circle3'){
+          $('#myModal3').foundation('reveal', 'open');
+        }
+        if(el.id == 'circle4'){
+          $('#myModal4').foundation('reveal', 'open');
+        }
+        if(el.id == 'circle5'){
+          $('#myModal5').foundation('reveal', 'open');
+        }
+        if(el.id == 'circle6'){
+          $('#myModal6').foundation('reveal', 'open');
+        }
+        if(el.id == 'circle7'){
+          $('#myModal7').foundation('reveal', 'open');
+        }
+        if(el.id == 'circle8'){
+          $('#myModal8').foundation('reveal', 'open');
+        }
+        if(el.id == 'circle9'){
+          $('#myModal9').foundation('reveal', 'open');
+        }
+        if(el.id == 'circle10'){
+          $('#myModal10').foundation('reveal', 'open');
+        }
+        if(el.id == 'circle11'){
+          $('#myModal11').foundation('reveal', 'open');
+        }
+        if(el.id == 'circle12'){
+          $('#myModal12').foundation('reveal', 'open');
+        }
+        if(el.id == 'circle13'){
+          $('#myModal13').foundation('reveal', 'open');
+        }
+        if(el.id == 'circle14'){
+          $('#myModal14').foundation('reveal', 'open');
+        }
+        if(el.id == 'circle15'){
+          $('#myModal15').foundation('reveal', 'open');
+        }
+        if(el.id == 'circle16'){
+          $('#myModal16').foundation('reveal', 'open');
+        }
+        if(el.id == 'circle17'){
+          $('#myModal17').foundation('reveal', 'open');
+        }
+        if(el.id == 'circle18'){
+          $('#myModal18').foundation('reveal', 'open');
+        }
+        if(el.id == 'circle19'){
+          $('#myModal19').foundation('reveal', 'open');
+        }
+        if(el.id == 'circle20'){
+          $('#myModal20').foundation('reveal', 'open');
+        }
+      }
+
+
+      /*$('#circles').on('submit', function (e) {
+        e.preventDefault();
+        if( getElementById == circle1){
+        
+      });
+	  */
+
+      $('#nav a').on('click', function(e) {
+        //e.preventDefault();
+        var target = $(this).attr('href');
+          if (target == '#') {
+            $('body,html').animate({scrollTop: 0});
+          }
+          else { var targetY = $(target).offset().top;
+            var headerHeight = $('.nav-inner').height();
+            $('body,html').animate({scrollTop: targetY - headerHeight});
+          }
+
+      });
+    </script>
+  </body>
+</html>
+
+<!--
+To add:
+
+-->

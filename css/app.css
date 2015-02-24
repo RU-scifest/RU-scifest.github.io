@@ -1,0 +1,255 @@
+a {
+	color: #ffffff;
+	font-weight: 600;
+}
+
+a:hover, a:focus{
+	outline: 0;
+	overflow: hidden;
+	color: gray;
+}
+
+a .active{
+	outline: 0;
+	overflow: hidden;
+	color: gray;
+}
+
+b {
+	color: #d41d29;
+}
+
+.circle {
+	border-radius: 50%;
+	border-style: none;
+	width: 100px;
+	height: 100px;
+	cursor: pointer;
+	/* width and height can be anything, as long as they're equal */
+}
+
+.circle2 {
+	border-radius: 50%;
+	border-style: none;
+	width: 80px;
+	height: 80px;
+	cursor: pointer;
+	/* width and height can be anything, as long as they're equal */
+}
+
+dd a{
+	padding-left: 5%;
+	border-bottom:2px solid white;
+	font-size: 1.2em;
+	font-family: 'Helvetica';
+	font-style: bold;
+	text-align: center;
+}
+
+footer {
+	border-bottom: 4px solid white;
+}
+
+footer p {
+	font-size: 1em;
+}
+
+form {
+	max-width: 225px;
+	min-width: 40%; 
+	margin: 30px auto;
+	text-align: center;
+}
+
+h1 {
+	font-size: 4em;
+}
+
+h1 , h2 {
+	font-family: 'Helvetica';
+	color: white;
+}
+
+hgroup {
+	text-align: center; 
+}
+
+p {
+	color: white;
+	font-family: 'Helvetica';
+	font-size: 250%;
+	margin-bottom: 2%;
+}
+
+#about {
+	background-image: url('../img/707414main_Dbl_prom_full.jpg');
+	background-repeat: no-repeat;
+	background-position: center top;
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#about a:focus, a:hover{
+	color: gray;
+}
+
+#about a{
+	color: white;
+}
+
+#billboard {
+  height: 100%;
+  width: 100%;
+  background-image: url('../img/715715main_holiday_full_full.jpg');
+	background-repeat: no-repeat;
+	background-position: center top;
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#people {
+	background-image: url('../img/2014-01_DowntownAuriga-mbRBA.jpg');
+}
+
+#header-text {
+	padding: 5%;
+}
+
+#directions {
+  height: 500px;
+  width: 100%;
+}
+
+#logo {
+	margin: 2% 0 2%;
+}
+
+#nav {
+	position: fixed;
+	z-index: 10;
+}
+
+@media(max-width : 640px) {
+	#about p {
+		font-size: 1.5em;
+	}
+
+	#billboard {
+		background-image: url('../img/715715main_holiday_full_full.jpg');
+		background-repeat: no-repeat;
+		background-position: center top fixed;
+		-webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  -o-background-size: cover;
+	  background-size: cover;
+	  min-height: 100%;
+	}
+	#contact {
+		position: static;
+		margin: 30% 40% 0 ;
+	}
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (-webkit-min-device-pixel-ratio: 1)  { 
+	#billboard {
+		background-image: url('../img/715715main_holiday_full_full.jpg');
+		background-repeat: no-repeat;
+		background-position: center top fixed;
+		-webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  -o-background-size: cover;
+	  background-size: cover;
+	  min-height: 100%;
+	}
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px)and (-webkit-min-device-pixel-ratio: 2) { 
+	#billboard {
+		background-image: url('../img/715715main_holiday_full_full.jpg');
+		background-repeat: no-repeat;
+		background-position: center top fixed;
+		-webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  -o-background-size: cover;
+	  background-size: cover;
+	  min-height: 100%;
+	}
+}
+
+#anchors {
+	margin-top: 1.5%;
+}
+
+#anchors dd a:hover, a:focus{
+	outline: 0;
+	overflow: hidden;
+	border: none;
+	color: black;
+}
+
+.anchor{
+	top: ;
+}
+
+.one-edge-shadow {
+	-webkit-box-shadow: 0 6px 6px -6px black;
+	-moz-box-shadow: 0 6px 6px -6px black;
+	box-shadow: 0 6px 6px -6px black;
+}
+
+.overlay{
+	height: 100%;
+	background: rgba(0,0,0,0.8);
+	padding: 0 5% 5%;
+}
+
+.overlay .row h1, .overlay2 .row h1 {
+	text-align: center;
+	margin-top: 5%;
+	/*font-weight: 600;*/
+}
+
+.web {
+	background-image: url('../img/700406main_saturn_full_full.jpg');
+	background-repeat: no-repeat;
+	background-position: center top;
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 300px;
+  text-align: center;
+}
+
+.web a {
+	font-weight: 600;
+}
+
+.web h2 {
+	margin-top: 15%;
+}
+
+.callout h1 {
+	margin-top: 5%;
+}
+
+.callout h1 {
+	padding-bottom: 10px;
+}
+
+.reveal-modal h2, p, a{
+	color: black;
+}
+
+#wrapper h1{
+	color: white;
+}
+::-webkit-input-placeholder { font-family:'Helvetica'; }
+::-moz-placeholder {  font-family:'Helvetica'; } /* firefox 19+ */
+:-ms-input-placeholder { font-family:'Helvetica'; } /* ie */
+input:-moz-placeholder { font-family:'Helvetica'; }
+
