@@ -1,0 +1,951 @@
+.deletePreset {
+    position: absolute;
+    top: -17px;
+    right: -13px;
+    font-size: 12px;
+    padding: 1px 3px;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+.draggableModal * {
+    -moz-box-sizing: content-box !important;
+    box-sizing: content-box !important; 
+    border: medium none;
+    color: #333333;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 1em;
+    margin: 0;
+    padding: 0;
+}
+.draggableModal input, .draggableModal select, .draggableModal a,
+.draggableModal input[type="text"],
+.draggableModal input[type="password"],
+.draggableModal input[type="email"],
+.draggableModal textarea,
+.draggableModal select
+ {
+    -moz-box-sizing: content-box !important;
+    box-sizing: content-box !important;
+    height: auto;
+    width: auto;
+    background:#fff;
+    margin:0;
+    padding:0;
+}
+.draggableModal a {
+    background: transparent;
+}
+.draggableModal h2 {
+    margin-bottom: 1em;
+}
+.draggableModal fieldset {
+    float: left;
+    padding: 5px 5px;
+}
+.draggableModal fieldset#fontActionButtons {
+    width: 110px;
+}
+.draggableModal fieldset label {
+    display: block;
+    font-size: 12px;
+    font-weight: regular;
+    margin-bottom: 0.4em;
+}
+.draggableModal fieldset select {
+    margin-left: 10px;
+    padding: 3px;
+    border: 1px solid #999;
+}
+.draggableModal fieldset .resetField {
+    color: orange;
+    font-size: 9px;
+    vertical-align: super;
+}
+.draggableModal fieldset input[type="text"] {
+    font-size: 11px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 3px;
+    width: 50px;
+    display:inline-block;
+}
+#text-shadowFieldset .ui-slider {
+    float: left;
+}
+#text-shadowFieldset label {
+    clear: both;
+    float: left;
+}
+/*
+* jQuery UI Slider
+*/
+#text-shadowFieldset .ui-slider-horizontal {
+    clear: both;
+}
+.draggableModal fieldset.slider-extended input[type="text"] {
+    width: 25px;
+    padding-left: 5px;
+}
+.draggableModal fieldset.slider-extended .ui-slider-horizontal.ui-slider {
+    display: block;
+    margin-bottom: 0.5em;
+    position: relative;
+    top: 3px;
+    width: 247px;
+    height: 1px;
+    /*background: #666666;*/
+    background: #ccc;
+    border: none;
+}
+.draggableModal fieldset.slider-extended .ui-slider-vertical.ui-slider {
+    width: 1px;
+    background: #ccc;
+    border: none;
+    left: 3px;
+}
+.draggableModal fieldset.slider-extended .ui-slider-range {
+    background: #666;
+    /*background: #fff;*/
+}
+
+.draggableModal fieldset .ui-slider-horizontal .ui-slider-handle {
+    width: 8px;
+    height: 14px;
+    border: none;
+    background: #000;
+    margin-top: -2px;
+}
+.draggableModal fieldset .ui-slider-vertical .ui-slider-handle {
+    height: 8px;
+    width: 14px;
+    border: none;
+    background: #000;
+    margin-left: -2px;
+}
+.draggableModal fieldset.slider-extended .ui-slider-vertical.ui-slider {
+}
+
+/*
+*
+*   Appearance panel
+*
+*/
+#appearancePanel {
+    background: #2b2b2b;
+    border:none;
+    border-radius:0;
+    height: 40px;
+    padding: 0;
+}
+#appearancePanel fieldset {
+}
+#appearancePanel label {
+    color: #f9f5ea;
+}
+#appearancePanel #fontActionButtons {
+}
+#appearancePanel #settingsButtons {
+}
+#appearancePanel #globalChangeFont h3 {
+}
+#appearancePanel #ffw-slider-range-min {
+}
+#appearancePanel #globalChangeFont p {
+}
+
+#appearancePanel #globalChangeFont {
+}
+#appearancePanel #selectorFieldset {
+}
+
+#appearanceStandardFields fieldset {
+    margin-top: 2px;
+}
+#font-sizeFieldset label {
+    width: 130px;
+    display: inline-block;
+}
+#font-sizeFieldset .ui-slider {
+    width: 115px;
+    display: inline-block;
+}
+#appearancePanel fieldset.slider-extended .ui-slider-horizontal.ui-slider {
+    background: #999;
+}
+#appearancePanel fieldset.slider-extended .ui-slider-range {
+    background: #ddd;
+}
+
+#appearancePanel fieldset .ui-slider-horizontal .ui-slider-handle {
+    background: #fff;
+}
+
+
+
+/*
+*
+* Effects panel
+*
+*/
+#effectsPanel {
+    
+}
+#effectsPanel fieldset .ui-slider-horizontal .ui-slider-handle {
+}
+#effectsPanel fieldset.slider-extended .ui-slider-horizontal.ui-slider {
+    width: 169px;
+}
+#effectsPanel fieldset.slider-extended .ui-slider-range {
+}
+#effectsPanel > select {
+    font-size: 12px;
+    margin-left: 4px;
+    margin-right: 3px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    background: #f5f3f3;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    width: 181px;
+}
+#effectsPanel div.label {
+    
+}
+    #effectsPanel div.label > a {
+        font-size: 12px;
+    }
+    #effectsPanel div.label a.effectName {
+        width: 140px;
+        display: inline-block;
+        cursor: n-resize;
+    }
+    #effectsPanel div.label a.removeEffect {
+        font-size: 14px;
+    }
+    #effectsPanel a.effectArrow {
+        background: url("../images/arrow.png") no-repeat scroll left center transparent;
+        padding-left: 12px;
+        display: inline-block;
+        width: 12px;
+        height: 12px;
+        padding: 0;
+        margin: 0;
+    }
+#effectsPanel input[name=enabled] {
+    margin-right: 3px;
+}
+#effectsPanel .effectsList {
+    margin-bottom: 5px;
+}
+    #effectsPanel .effectsList > div {
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-top: 5px;
+    }
+    #effectsPanel .effectsList fieldset {
+        float: none;
+    }
+
+
+
+.draggableModal label {
+    display: inline;
+}
+.draggableModal {
+    background: none repeat scroll 0 0 rgba(255, 255, 255, 0.9);
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 0 7px rgba(0,0,0,0.1);
+    margin: 0;
+    padding: 0;
+    position: fixed;
+}
+.draggableModal input[type="button"], .draggableModal button, .draggableModal input[type="submit"] {
+    border: none;
+    border-radius: 0;
+    cursor: pointer;
+    padding: 5px;
+}
+.draggableModal input[type="text"], .draggableModal input[type="password"] {
+    border: none;
+    font-size: 12px;
+    padding: 3px 5px;
+    border-radius: 2px;
+    height: 20px;
+}
+h1.draggableModalBar {
+    color: #212121;
+    cursor: move;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 1.35em;
+    margin: 0;
+    padding: 3px 0;
+    text-indent: 7px;
+    width: 100%;
+    text-align: left;
+    height: 11px;
+}
+h1.draggableModalBar #font_ver {
+    background: url("../images/font_ver.png") repeat scroll 0 0 transparent;
+    display: block;
+    height: 65px;
+    left: 33%;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: -37px;
+    width: 337px;
+}
+h1.draggableModalBar small {
+    color: #6D768F;
+    font-size: 10px;
+    visibility: hidden;
+}
+.draggableModalBar a {
+    color: #333333;
+}
+.draggableModalBar .closeModal {
+    color: #000;
+    font-size: 18px;
+    font-weight: bold;
+    height: 13px;
+    padding: 0px;
+    text-align: center;
+    text-decoration: none;
+    width: 15px;
+    margin: -2px 3px;
+}
+.draggableModalBar a {
+    float: right;
+    margin-top: 4px;
+    text-indent: 0;
+}
+.draggableModal .loading {
+    background: url("../loadinfo.net.gif") repeat scroll 0 0 transparent;
+    height: 48px;
+    margin: 60px auto;
+    width: 48px;
+}
+.fontLoading {
+    background: url("../loadinfo.net.gif") no-repeat scroll center center #fff;
+    border-radius: 10px;
+    height: 48px;
+    width: 48px;
+    position: fixed;
+    top:50px;
+    left: 30px;
+    padding:20px;
+}
+#media-buttons a#FFW_chooseFontButton {
+    height: 13px;
+    padding-bottom: 0;
+    width: 95px;
+}
+#media-buttons a#FFW_chooseFontButton:hover {
+    background-position: 0 -13px !important;
+}
+#fontplugin {
+    color: #464646;
+    right: 0;
+    height: 70%;
+    top: 38px;
+    width: 276px;
+    z-index: 10000;
+    position:fixed;
+    background:#fff;
+    display:none;
+}
+#fontplugin ul {
+    margin: 0;
+    padding: 0;
+}
+#fontplugin #fontslist {
+    height: 89%;
+    margin-left: 15px;
+    width: 265px;
+}
+#fontplugin #uploaded {
+    height: 76%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding: 10px;
+}
+#fontplugin #uploaded a {
+    color: #0066CC;
+}
+#fontplugin #uploaded p {
+    font-size: 12px;
+    line-height: 1.5em;
+    margin-bottom: 1em;
+}
+#fontplugin #uploaded input[type="text"], #fontplugin #uploaded input[type="password"] {
+    margin-bottom: 10px;
+    margin-left: 10px;
+    text-align: left;
+}
+#fontplugin #uploaded .fontUploadForm {
+    background: none repeat scroll 0 0 #E4EFFC;
+    border: 1px solid #DDDDDD;
+    margin-bottom: 1em;
+    padding: 0.5em 5px;
+}
+#fontplugin #uploaded input.input_file {
+    margin: 1em auto;
+}
+#fontplugin #uploaded .fontsList {
+    margin-bottom: 1em;
+}
+#fontplugin #uploaded form {
+    margin: auto;
+    text-align: right;
+    width: 90%;
+}
+#fontplugin #uploaded li {
+    list-style-type: none;
+    position: relative;
+}
+#fontplugin div.tablinks {
+    border-bottom: 1px solid #CCCCCC;
+    border-left: 0 none;
+    padding: 2px 2px 0;
+    text-decoration: none;
+}
+#fontplugin a.tablink {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border-color: #AAAAAA;
+    border-radius: 5px 5px 0 0;
+    border-style: solid;
+    border-width: 1px 0 0 1px;
+    border-top-color: #f2f2f2;
+    color: #222222;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 1.3em;
+    padding: 9px 5px 5px;
+    position: relative;
+    text-decoration: none;
+    top: 1px;
+}
+#fontplugin a.close_link {
+    color: #21759B;
+    float: right;
+    font-size: 11px;
+    padding: 9px 6px 3px 3px;
+}
+#fontplugin .fcarousel-container {
+    height: 100%;
+    left: -4px;
+    position: relative;
+}
+#fontplugin .fcarousel-clip {
+    height: 100%;
+    left: 0;
+    position: relative;
+}
+#fontplugin .fcarousel-next {
+    background: url("../images/forward.png") repeat scroll -29px 0 transparent;
+    color: red;
+    display: none !important;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 17px;
+    z-index: 5;
+}
+#fontplugin .fcarousel-next-disabled {
+    background-position: -2px 0;
+    cursor: default;
+}
+#fontplugin .fcarousel-prev {
+    background: url("../images/back.png") repeat scroll 27px 0 transparent;
+    color: red;
+    cursor: pointer;
+    height: 120px;
+    left: -12px;
+    position: absolute;
+    top: 20px;
+    width: 21px;
+    z-index: 15;
+}
+#fontplugin .fcarousel-prev-disabled {
+    background-position: 0 0;
+    cursor: default;
+}
+#fontplugin #FFW_browser_carousel {
+    height: 100%;
+}
+#fontplugin #FFW_browser_carousel li.fcarousel-item {
+    height: 100%;
+    width: 265px;
+}
+#fontplugin #FFW_browser_carousel li .logo_slide {
+    background: url("../images/logo_slide.png") repeat scroll 0 0 #DDDDDD;
+    height: 452px;
+    width: 240px;
+}
+#fontplugin li.categoriesList ul li {
+    margin: 0;
+    list-style-type:none;
+}
+#fontplugin li.categoriesList ul li.instructions {
+    margin: 15px;
+}
+#fontplugin li.categoriesList a {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border-bottom: 1px solid #DDDDDD;
+    display: block;
+    font-size: 19px;
+    margin: 0;
+    text-decoration: none;
+    width: 100%;
+}
+#fontplugin li.categoriesList a.delete {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #DDDDDD;
+    border-radius: 3px 3px 3px 3px;
+    color: red;
+    display: block;
+    font-size: 14px;
+    height: 15px;
+    padding: 3px 5px;
+    position: absolute;
+    right: 4px;
+    top: 10px;
+    width: 8px;
+}
+#fontplugin li.categoriesList a.delete:hover {
+    background: none repeat scroll 0 0 #EE3300;
+    color: #FFFFFF;
+    font-weight: bold;
+    text-indent: -1px;
+}
+#fontplugin li.categoriesList a img {
+    width: 100%;
+}
+#fontplugin li.fcarousel-item ul {
+    height: 100%;
+    overflow: auto;
+}
+#fontplugin li#fontList ul li {
+    background: none repeat scroll 0 0 #CCCCCC;
+    border-bottom: 1px solid #EEEEEE;
+    font-size: 14px;
+    margin: 0;
+    list-style-type:none;
+}
+#fontplugin li#fontList ul li:hover {
+    position: relative;
+}
+#fontplugin li#fontList ul li a {
+    display: block;
+}
+#fontplugin li#fontList ul li a img {
+    border: medium none;
+    width: 100%;
+}
+#fontplugin a.font_pick span.font_pick_hint {
+    display: none;
+}
+#fontplugin li#fontList ul li a.font_pick:hover span.font_pick_hint {
+    background: none repeat scroll 0 0 #666666;
+    color: #FFFFFF;
+    display: none;
+    font-size: 10px;
+    height: 16px;
+    padding: 2px;
+    position: absolute;
+    right: 0;
+}
+#fontplugin li#fontList ul li:hover a.font_pick {
+    border-top: 1px solid #DDDDDD;
+    margin-bottom: -1px;
+    position: relative;
+    text-decoration: none;
+    top: -16px;
+}
+#fontplugin li#fontList ul li.firstElementOLD:hover a.font_pick {
+    margin-bottom: 15px;
+    top: 0;
+}
+#fontplugin li#fontList ul li a.font_url {
+    color: #000000 !important;
+    display: none;
+    font-size: 11px !important;
+}
+#fontplugin li#fontList ul li:hover a.font_url {
+    bottom: 0;
+    display: block;
+    padding: 2px;
+    position: absolute;
+    right: 2px;
+    text-decoration: none;
+}
+
+#presetsPanel {
+    z-index: 10000;
+    background: rgba(255,255,255,0.88);
+}
+#presetsPanel #presetsDropdownFieldset {
+    display: block;
+    float: left;
+    width: 105px;
+    height: auto;
+    padding: 0;
+    margin-bottom: 0;
+    position: relative;
+}
+#presetsPanel #presetsDropdownFieldset:hover {
+}
+#presetsDropdownFieldset:hover button#deletePreset, #presetsDropdownFieldset:hover button#renamePreset {
+    display: block !important;
+}
+ 
+ 
+
+#presetsPanel #selectorFieldset {
+    margin-top: 0;
+    padding: 0;
+    float: left;
+    margin-left:3px;
+}
+#actionsFieldset {
+    float: right;
+    text-align: right;
+    padding: 0;
+    position: relative;
+    top: inherit;
+    right: 3px;
+    width: 230px;
+}
+    #actionsFieldset .closeModal {
+        float: right;
+        padding: 3px 5px;
+        font-weight: bold;
+        border: none;
+        border-radius: 2px;
+        margin-left: 10px;
+        color: #fff;
+        text-decoration: none;
+        margin-top: 2px;
+        font-size: 27px;
+        margin-right: 5px;
+    }
+#presetsPanel #presetsDropdownFieldset label, #presetsPanel #selectorFieldset label {
+    font-size: 12px;
+    font-weight: regular;
+    width: 105px;
+    padding-left:3px;
+    text-indent: 3px;
+    line-height: 1.5em;
+}
+#presetsPanel #presetsDropdownFieldset select {
+    border: 1px solid #f5f3f3;
+    background: #f5f3f3;
+    color: #212121;
+    font-size: 11px;
+    font-weight: normal;
+    height: 19px;
+    padding: 0;
+    width: 91px;
+    float: none;
+    margin-top: 3px;
+    margin-left: 0;
+    display: block;
+}
+
+#presetsPanel #presetsDropdownFieldset button {
+    border: none;
+    height: 15px;
+    margin: 0;
+    font-size: 11px;
+    padding: 0;
+    background-size: 100% 100% !important;
+}
+#presetsPanel #presetsDropdownFieldset button#deletePreset {
+    position: absolute;
+    left: 98%;
+    top: 9px;
+    display: none;
+    background: none;
+    color: #f10c0c;
+    font-weight: bold;
+}
+#presetsPanel #presetsDropdownFieldset button#renamePreset {
+    float: none;
+    position: absolute;
+    left: 98%; /* can't be over 100 because hover will disappear'*/
+    top: 22px;
+    display: none;
+    background: none;
+    color: #212121;
+}
+#presetsPanel #selectorFieldset input[name="selector"] {
+    border: 1px solid #999999;
+    color: #333333;
+    display: block;
+    float: right;
+    font-size: 11px;
+    height: 18px;
+    margin: 0;
+    padding: 5px;
+    width: 74%;
+}
+#presetsPanel > .pickElement {
+    background: url("../images/pick.png") repeat scroll 0 0 transparent;
+    border: medium none;
+    font-size: 0;
+    
+    margin-left: 3px;
+    margin-bottom: 5px;
+    margin-top: 3px;
+    padding: 0;
+    text-indent: -10000px;
+    width: 99px;
+    height: 36px;
+}
+#presetsPanel #selectorFieldset .pickAddElement {
+    width: 99px;
+    height: 36px;
+    /*opacity:0.7;*/
+    background-size: 100% 100%;
+}
+div.colorpicker {
+    z-index: 1500000;
+}
+#presetsPanel #selectorFieldset .pickElement.pickAddElement {
+    background: url("../images/pick_add.png") repeat scroll 0 0 transparent;
+    border: medium none;
+    margin-bottom: 5px;
+    text-indent: -10000px;
+    border: medium none;
+    font-size: 0;
+    padding: 0;
+}
+#stylesPanel ul {
+    overflow-y: auto;
+}
+#stylesPanel li {
+    list-style-type: none;
+    padding: 10px;
+    border: 1px solid #dddddd;
+    margin: 10px;
+    cursor: pointer;
+}
+#stylesPanel div {
+    outline: none !important;
+    cursor: pointer !important;
+}
+
+button#fontfaceSettings {
+    background: url("../images/font_settings.png") repeat scroll 0 0 transparent;
+    background-size: 140% auto;
+    background-position: center left;
+    border: medium none;
+    float: left;
+    font-size: 0;
+    height: 38px;
+    margin: 0 5px 0 0;
+    padding: 0;
+    text-indent: -10000px;
+    width: 220px;
+}
+button#colorsizeSettings {
+    background: url("../images/snc_settings.png") repeat scroll 0 0 transparent;
+border: medium none;
+float: left;
+height: 27px;
+margin: 0;
+padding: 0;
+margin-right: 5px;
+text-indent: -10000px;
+width: 63px;
+}
+button#add3dSettings {
+    margin-right: 5px;
+    float:left;
+height:16px;
+}
+a#upgradeToProButton {
+    background: #4088e1;
+    color: #ffffff;
+    width: 130px;
+    height: 40PX;
+    margin: 0;
+    padding: 0;
+    text-indent: inherit;
+    margin-right: auto;
+    margin-left: 3px;
+    float: left;
+    font-size: 18px;
+    text-align: center;
+    vertical-align: middle;
+    display: inline-block;
+    line-height: 40px;
+}
+a#upgradeToProButton:hover {
+    transition: all 100ms ease-in;
+    background: #64a8fb;
+}
+#fontSaveSettings {
+    background: url("../images/save.png") repeat scroll 0 0 transparent;
+    border: medium none;
+    font-size: 0;
+    height: 40px;
+    padding: 0;
+    text-indent: -10000px;
+    
+    margin: 0;
+    width: 96px;
+    
+    margin-bottom: -2px;
+    padding: 0;
+}
+button#extrafieldsSettings {
+    background: #4088e1;
+    color: #ffffff;
+    width: 135px;
+    height: 40PX;
+    margin: 0;
+    padding: 0;
+    margin-left: 3px;
+    float: left;
+    font-size: 18px;
+    text-align: center;
+    vertical-align: middle;
+    display: inline-block;
+    line-height: 40px;
+}
+button#extrafieldsSettings:hover {
+    transition: all 100ms ease-in;
+    background: #64a8fb;
+}
+#effectsButton {
+    background: #ee4f84;
+    color: #ffffff;
+    width: 95px;
+    height: 40PX;
+    margin: 0;
+    padding: 0;
+    margin-left: 3px;
+    float: left;
+    font-size: 18px;
+    text-align: center;
+    vertical-align: middle;
+    display: inline-block;
+    line-height: 40px;
+    text-shadow: rgb(205, 142, 222) 1px 1px 10px, rgb(205, 142, 222) -1px 1px 10px, rgb(205, 142, 222) 1px -1px 10px, rgb(205, 142, 222) -1px -1px 10px, rgb(159, 113, 171) -1.13px -0.41px 0.3px !important;
+    /* Standard */
+    transition: all 100ms;
+}
+#effectsButton:hover {
+    background: #ff7ca7;
+    text-shadow: rgb(255, 255, 255) 1px 1px 10px, rgb(255, 255, 255) -1px 1px 10px, rgb(255, 255, 255) 1px -1px 10px, rgb(255, 255, 255) -1px -1px 10px, rgb(255, 255, 255) -1.13px -0.41px 0.3px !important;
+}
+#stylesButton {
+    background: #ee4f84;
+    color: #ffffff;
+    width: 85px;
+    height: 40PX;
+    margin: 0;
+    padding: 0;
+    margin-left: 3px;
+    float: left;
+    font-size: 18px;
+    text-align: center;
+    vertical-align: middle;
+    display: inline-block;
+    line-height: 40px;
+    text-shadow: rgb(205, 142, 222) 1px 1px 10px, rgb(205, 142, 222) -1px 1px 10px, rgb(205, 142, 222) 1px -1px 10px, rgb(205, 142, 222) -1px -1px 10px, rgb(159, 113, 171) -1.13px -0.41px 0.3px !important;
+    /* Standard */
+    transition: all 100ms;
+}
+#stylesButton:hover {
+    background: #ff7ca7;
+    text-shadow: rgb(255, 255, 255) 1px 1px 10px, rgb(255, 255, 255) -1px 1px 10px, rgb(255, 255, 255) 1px -1px 10px, rgb(255, 255, 255) -1px -1px 10px, rgb(255, 255, 255) -1.13px -0.41px 0.3px !important;
+}
+button#shadowSettings {
+    background: lightgray;
+    margin-top: 0;
+    margin-right: 6px;
+    float: left;
+    text-shadow: 2px 2px 3px #000;
+    font-weight: bold;
+}
+
+.XYSliderHolder {
+    width: 10px;
+    height:10px;
+    position:absolute;
+    top:20px;
+    left:50%;
+    padding:0;
+    margin:0;
+}
+.XYSlider {
+    position:absolute;
+    width: 36px !important;
+    height:32px;
+    
+    background: url("../images/3d-XYSlider.png") repeat scroll 0 0 transparent;
+    text-indent: -10000px;
+    
+    border: none;
+    
+    font-size:12px !important;
+    letter-spacing: normal !important;
+    color: black;
+    font-family:Arial, Helvetica, sans-serif !important;
+    padding:0 !important;
+    margin:0 !important;
+    text-shadow:none !important;
+    text-align:center;
+    font-weight:normal !important;
+    line-height:2em !important;
+}
+.extrudeHandleHolder {
+    width: 10px;
+    height:10px;
+    position:absolute;
+    top:20px;
+    left:50%;
+    padding:0;
+    margin:0;
+}
+.extrudeHandle {
+    position:absolute;
+    width: 55px !important;
+    height:25px;
+    background:rgba(255, 255, 0, 0.8);
+    border:1px solid rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    font-size:12px !important;
+    
+    letter-spacing: normal !important;
+    color: black;
+    font-family:Arial, Helvetica, sans-serif !important;
+    padding:2px !important;
+    text-shadow:none !important;
+    text-align:center;
+    font-weight:normal !important;
+    line-height:2em !important;
+}
+.cancelSelecting {
+    background: none repeat scroll 0 0 red;
+    border-radius: 0 0 20px 0;
+    color: #FFFFFF;
+    font-size: 16px;
+    left: 0;
+    padding: 17px 15px 9px 8px;
+    position: fixed;
+    top: 20px;
+    z-index: 10000;
+}
+.yesno {
+    margin-top: 8px;
+}
