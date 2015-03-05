@@ -1471,7 +1471,7 @@ input[type="search"].search-input {
   color: #ff1d25;
 }
 .otw-red-link a:hover {
-  color: #d00007;
+  /*color: #d00007;*/
 }
 .otw-red-link a:active {
   color: #ff5056;
