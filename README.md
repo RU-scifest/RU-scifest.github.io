@@ -1,4 +1,4 @@
 RU-scifest.github.io
 ====================
 
-Website for Rutgers Science Festival
+Website for Rutgers' Spring 2015 Science Festival
